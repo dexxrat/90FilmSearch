@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90Film - Найти фильм по фразе</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1 class="logo-main"><span class="logo-accent">90</span>Film</h1>
+                <p class="logo-subtitle">На<span class="logo-subtitle-accent">й</span>ти фильм</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="search-section">
+                <div class="search-title">
+                    <h2>Найди фильм по фразе</h2>
+                </div>
+                
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <div class="search-input-group">
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                id="searchInput"
+                                placeholder="Впишите фразу из фильма..."
+                                autocomplete="off"
+                            >
+                            <button type="submit" class="search-button" id="searchButton">
+                                <span class="button-text">Найти</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="search-hint">
+                        <p>Если вы хотите найти фильм но не знаете названия, впишите в строку поиска любую фразу из этого фильма и наслаждайтесь результатами</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-preview">
+                <img src="web/john_wick.jpg" alt="Джон Уик" class="movie-image" id="movieImage">
+                <div class="movie-info">
+                    <h3 class="movie-title" id="movieTitle">Джон Уик</h3>
+                    <p class="movie-quote" id="movieQuote">"Я дитя Беларуси"</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 90Film. Поиск фильмов по цитатам</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
